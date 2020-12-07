@@ -1,0 +1,10 @@
+
+  .element {
+    height: 120px;
+    width: 120px;
+    margin: 10px;
+   }
+  
+  .white {fill:#FFFFFF}
+  .gray {fill:#E0E0E0}
+  .yellow {fill:#FFEB3B}

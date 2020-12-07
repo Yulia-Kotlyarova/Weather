@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title> Fancy Weather </title>
+    <link href = "style.css" rel = "stylesheet">
+    <link href = "map.css" rel = "stylesheet">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.15/esri/themes/light/main.css"/>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css" rel="stylesheet" />
+    <style>
+        html,
+        body,
+        #viewDiv {
+          padding: 0;
+          margin: 0;
+          height: 100%;
+          width: 100%;
+        }
+      </style>
+</head>
+<body>
+    <div class="background-img"></div>
+    <header>
+        <div class="wrapper-settings">
+
+            <div class="change-img"> 	&#8634 </div>
+
+            <div class="lang">
+                <div class="lang-en active-lang"> 
+                    <a>EN</a> 
+                </div>
+                <div class="lang-be"> 
+                    <a>BE</a> 
+                </div>
+                <div class="lang-ru"> 
+                    <a>RU</a> 
+                </div>
+            </div>
+
+            <div class="degree">
+                <div id = "c-degree" class="active-deg"> &deg C </div>
+                <div id = "f-degree"> &deg F </div>
+            </div>
+        </div>
+
+        <form>
+            <div class="input-box">
+                <input x-webkit-speech class = "search-input" name = "search" value = "" placeholder = "Search city" autofocus required>
+                <div id="microphone" class="microphone-icon" title="Голосовой поиск">
+                    <svg class="bi bi-mic-fill hidden-mic" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0V3z"/>
+                        <path fill-rule="evenodd" d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5z"/>
+                      </svg>
+                      <svg class="bi bi-mic-mute-fill" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M12.734 9.613A4.995 4.995 0 0 0 13 8V7a.5.5 0 0 0-1 0v1c0 .274-.027.54-.08.799l.814.814zm-2.522 1.72A4 4 0 0 1 4 8V7a.5.5 0 0 0-1 0v1a5 5 0 0 0 4.5 4.975V15h-3a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-3v-2.025a4.973 4.973 0 0 0 2.43-.923l-.718-.719zM11 7.88V3a3 3 0 0 0-5.842-.963L11 7.879zM5 6.12l4.486 4.486A3 3 0 0 1 5 8V6.121zm8.646 7.234l-12-12 .708-.708 12 12-.708.707z"/>
+                      </svg>
+                </div>
+                <button class = "search-btn"> Search </button>
+            </div>
+        </form>
+    </header>
+
+    <main class = "wrapper-main">
+        <section class = "wrapper-main__box">
+            <div class="today-wrapper">
+                <div class="location-data">
+                    <h2  class="city"></h2>
+                </div>
+                <div class="today-box">
+    
+                </div>
+            </div>
+    
+            <div class="wrapper-few-day">
+                
+            </div>
+        </section>
+        <aside>
+            <div class = "map-wrapper"> 
+                <div id="viewDiv"></div>
+            </div>
+            <strong class = "latitude"> </strong>
+            <strong class="longitude"> </strong>
+        </aside>
+    </main>
+    <script type="module" src = "./api/map.js"></script>
+    <script type="module" src = "./js/weather/TodayWeather.js"></script>
+    <script type="module" src = "./js/weather/Weather.js"></script>
+    <script type="module" src = "./js/weather/degree.js"></script>
+    <script type="module" src = "./js/change_background.js"> </script>
+    <script type="module" src = "./js/main.js"> </script>
+    <script type="module" src = "./js/translation.js"></script>
+    <script type="module" src = "./data/icon.js"></script>
+    <script type="module" src = "js/speech.js"></script>
+    <script type="module" src = "js/location.js"></script>
+</body>
+</html>

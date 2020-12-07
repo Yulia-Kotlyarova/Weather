@@ -1,0 +1,46 @@
+const icons = {
+    "200": "./img/animated/thunder.svg",
+    "201": `./img/animated/thunder.svg`,
+    "202": "./img/animated/thunder.svg",
+    "230": "./img/animated/thunder.svg",
+    "231": "./img/animated/thunder.svg",
+    "232": "./img/animated/thunder.svg",
+    "233": "./img/animated/thunder.svg",
+    "300": "./img/animated/rainy-7.svg",
+    "301": "./img/animated/rainy-7.svg",
+    "302": "./img/animated/rainy-7.svg",
+    "500": "./img/animated/rainy-5.svg",
+    "501": "./img/animated/rainy-5.svg",
+    "502": "./img/animated/rainy-6.svg",
+    "511": "./img/animated/rainy-6.svg",
+    "520": "./img/animated/rainy-6.svg",
+    "521": "./img/animated/rainy-3.svg",
+    "522": "./img/animated/rainy-6.svg",
+    "600": "./img/animated/snowy-4.svg",
+    "601": "./img/animated/snowy-5.svg",
+    "602": "./img/animated/snowy-6.svg",
+    "610": "./img/animated/snowy-5.svg",
+
+    "611": "./img/animated/snowy-4.svg",
+    "612": "./img/animated/snowy-4.svg",
+    "621": "./img/animated/snowy-4.svg",
+    "622": "./img/animated/snowy-4.svg",
+    "623": "./img/animated/snowy-4.svg",
+
+    "700": "./img/animated/cloudy-day-2.svg",
+    "711": "./img/animated/cloudy-day-2.svg",
+    "721": "./img/animated/cloudy-day-2.svg",
+    "731": "./img/animated/cloudy-day-2.svg",
+    "741": "./img/animated/cloudy-day-2.svg",
+    "751": "./img/animated/cloudy-day-2.svg",
+
+
+    "800": "./img/animated/day.svg",
+    "801": "./img/animated/cloudy-day-1.svg",
+    "802": "./img/animated/cloudy-day-2.svg",
+    "803": "./img/animated/cloudy-day-3.svg",
+    "804": "./img/animated/cloudy.svg",
+    "900": "./img/animated/cloudy.svg",
+}
+
+export default icons;
